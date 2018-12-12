@@ -195,15 +195,15 @@ function init() {
     colorList = [];
     // canvas1個め
     canvasList.push(document.getElementById("sineCanvas"));
-    colorList.push(['#10c2cd', '#43c0e4', '#1d82b6']);
+    colorList.push(['#fff', '#fff', '#fff']);
 
     // canvas2個め
     canvasList.push(document.getElementById("sineCanvas1"));
-    colorList.push(['red', 'green', 'blue']);
+    colorList.push(['red', 'green', '#fff']);
 
     // canvas3個め
     canvasList.push(document.getElementById("sineCanvas2"));
-    colorList.push(['cyan', 'magenta', 'yellow']);
+    colorList.push(['cyan', 'magenta', '#fff']);
 
         // 各キャンバスの初期化
         for(var canvasIndex in canvasList) {
@@ -243,8 +243,8 @@ function draw(canvas, color) {
 
     //波を描画
     drawWave(canvas, color[0], 0.3, 3, 0);
-    drawWave(canvas, color[1], 0.4, 2, 250);
-    drawWave(canvas, color[2], 0.2, 1.6, 100);
+    drawWave(canvas, color[1], 0.6, 2, 250);
+    drawWave(canvas, color[2], 0.9, 1.6, 100);
 };
 
 /**
