@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Eagle+Lake");
+/*-----------------------------------------*/
+/*サイト全体の設定 */
+/*-----------------------------------------*/
+body {
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrap_text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Subheading {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Eagle Lake", cursive;
+}
+
+/*------------------------------------------------*/
+/* 黒背景の幅と色の設定 */
+/*-------------------------------------------------*/
+.bg90 {
+  background-color: #0d0015;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bg80 {
+  background-color: #0d0015;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bg70 {
+  background-color: #0d0015;
+  width: widthS;
+  margin: 0 auto;
+}
+
+/*-----------------------------------------------
+画像と動画の設定
+-------------------------------------------------*/
+#canvas-container-hero {
+  max-width: 100vw;
+  height: 80vh;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  position: relative;
+}
+#canvas-container-hero #sineCanvas {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.middle_img {
+  text-align: center;
+}
+.middle_img video {
+  max-width: 100vw;
+  height: 40vh;
+}
+
+/*---------------------------------------------
+波の設定
+-----------------------------------------------*/
+#sineCanvas2 {
+  transform: rotate(180deg);
+}
+
+/*------------------------------------------------*/
+/* headerの設定 */
+/*-------------------------------------------------*/
+header {
+  width: 100vw;
+  background: #0d0015;
+  height: 80px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+header h1 {
+  color: #fff;
+  margin: 25px;
+  font-family: "Eagle Lake", cursive;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .itemB {
+  margin: 30px 25px 0 0;
+}
+
+/* ハンバーガーアイコンとドロワーメニュー */
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display: none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;
+  /*線の太さ*/
+  width: 30px;
+  /*長さ*/
+  border-radius: 3px;
+  background: #fff;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+
+#nav-open span:before {
+  bottom: -8px;
+}
+
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;
+  /*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  /*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  /*最前面に*/
+  width: 90%;
+  /*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 500px;
+  /*最大幅（調整してください）*/
+  height: 100%;
+  background: #0d0015;
+  /*背景色*/
+  transition: .3s ease-in-out;
+  /*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+  /*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;
+  /*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  /*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+/*---------------------------------------------------------
+main
+----------------------------------------------------------*/
+.infoBG {
+  padding: 1px;
+  background-color: #eee;
+  margin: 80px 0 0 0;
+}
+.infoBG p {
+  text-align: center;
+  font-size: 12px;
+}
+.infoBG span {
+  font-weight: bold;
+}
+
+/* タブの設定 */
+.tab_wrap {
+  width: 100%;
+  margin: 80px auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab_area {
+  font-size: 0;
+  margin: 0 10px;
+}
+
+.tab_area label {
+  width: 45%;
+  margin: 0 5px;
+  display: inline-block;
+  padding: 16px 0;
+  color: #999;
+  background: #ddd;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Eagle Lake", cursive;
+  cursor: pointer;
+  transition: ease 0.2s opacity;
+}
+.tab_area label:hover {
+  opacity: 0.5;
+}
+
+.panel_area {
+  background: #fff;
+}
+
+.tab_panel {
+  width: 100%;
+  padding: 80px 0;
+  display: none;
+}
+.tab_panel p {
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px;
+}
+
+.website_thumbnail p, .grap_thumbnail p {
+  font-size: 18px;
+  font-family: "Eagle Lake", cursive;
+}
+
+#tab1:checked ~ .tab_area .tab1_label {
+  background: #fff;
+  color: #000;
+}
+
+#tab1:checked ~ .panel_area #panel1 {
+  display: block;
+}
+
+#tab2:checked ~ .tab_area .tab2_label {
+  background: #fff;
+  color: #000;
+}
+
+#tab2:checked ~ .panel_area #panel2 {
+  display: block;
+}
+
+#top_contact h2 {
+  color: #fff;
+  padding: 50px 0;
+}
+
+.under_img {
+  max-width: 100vw;
+  height: 40vh;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+.under_img h3 {
+  text-align: center;
+  font-family: "Eagle Lake", cursive;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------------------------------
+footer
+-----------------------------------------*/
+#top_footer {
+  text-align: center;
+  background-color: #0d0015;
+  padding: 20px;
+}
+#top_footer p {
+  font-family: "Eagle Lake", cursive;
+  color: #fff;
+}
+#top_footer small {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

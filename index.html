@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discription" content="Webクリエイター、イラストレーター、漫画家であるHERUNEのポートフォリオサイトです。">
+    <meta name="keywordws" content="web,webクリエーター,イラストレーター,漫画家,漫画,マンガ家,マンガ,ポートフォリオ">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HIRUNE.LOG</title>
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="itemA wrap_text">
+            <h1>HIRUNE.LOG</h1>
+        </div>
+
+        <div class="itemB">
+            <div id="nav-drawer">
+                <!-- ハンバーガーアイコン -->
+                <input id="nav-input" type="checkbox" class="nav-unshown" >
+                <label id="nav-open"  for="nav-input"><span></span></label>
+                <label id="nav-close" class="nav-unshown" for="nav-input"></label>
+
+                <!-- バーガーアイコンの中身 -->
+                <div id="nav-content">
+                    <ul>
+                        <li><a href="">TOP</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">WORKS</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div><!-- /nav-content 中身ここまで-->
+            </div><!-- /nav-drawer -->
+        </div><!-- /.itemB -->
+    </div><!-- /.container -->
+</header>
+
+<div class="infoBG">
+    <p><span>お知らせ</span> 2019.01.20 関西コミティア54に出展します！</p>
+</div><!-- /.infoBG -->
+<main>
+    <div id="canvas-container-hero">
+        <canvas id="sineCanvas" width="800" height="300"></canvas>
+    </div><!-- /#canvas-container -->
+        <div class="hero_img"></div>
+        <div class="inner">
+            <div class="wrap_text">
+                <section id="top_about">
+                    <h2 class="Subheading">ABOUT</h2>
+                    <p>自己紹介文を書く</p>
+                    <p><a href="">-Read More-</a></p>
+                </section><!-- /top_about -->
+            </div><!-- /.wrap_text -->
+        </div>
+
+    <div class="middle_img">
+        <video controls autoplay loop>
+            <source src="images/15028211_203419683399875_6284215342268940288_n.mp4">
+        </video>
+    </div><!-- /.middle_img-->
+
+<div id="canvas-container">
+    <canvas id="sineCanvas1" width="800" height="300"></canvas>
+    <div class="inner">
+                <section id="top_works">
+        <h2 class="Subheading">WORKS</h2>
+        <p>課題やお仕事で制作したものをまとめています。</p>
+        <div class="tab_wrap">
+            <input id= "tab1" type="radio" name="tab_btn" checked>
+            <input id= "tab2" type="radio" name="tab_btn">
+
+            <div class="tab_area">
+                <label class="tab_label" for="tab1">Web site</label>
+                <label class="tab_label" for="tab2">Graphics</label>
+            </div>
+
+            <div class="panel_area">
+                <div id="panel1" class="tab_panel">
+                    <p>これまで作ったウェブサイト一覧です。</p>
+                        <div class="website_thumbnail">
+                            <a href="">
+                                <p><img src="" alt="もじかえる"></p>
+                                <div class="bg80">
+                                    <p>-Read More-</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="website_thumbnail">
+                            <a href="">
+                                <p><img src="" alt="クラウンベーカリー"></p>
+                                <div class="bg80">
+                                    <p>-Read More-</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+
+                <div id="panel2" class="tab_panel">
+                    <p>これまで作った作品の一覧です。</p>
+                    <div class="grap_thumbnail">
+                            <a href="">
+                                <p><img src="" alt="誘拐ラプソディー"></p>
+                                <div class="bg80">
+                                    <p>-Read More-</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grap_thumbnail">
+                            <a href="">
+                                <p><img src="" alt="九夏DM"></p>
+                                <div class="bg80">
+                                    <p>-Read More-</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grap_thumbnail">
+                            <a href="">
+                                <p><img src="" alt="カロリーメイト新パッケージ"></p>
+                                <div class="bg80">
+                                    <p>-Read More-</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grap_thumbnail">
+                            <a href="">
+                                <p><img src="" alt="ドット絵でお肉プロジェクト"></p>
+                                <div class="bg80">
+                                    <p>-Read More-</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div><!-- /tab_wrap -->
+        </section><!-- /top_works -->
+    </div><!-- /.warp_text -->
+
+    <div class="wave_line"><p>～～～～～～波線のアニメーション～～～～～～</p></div>
+    <div class="wrap_text">
+        <section id="top_gallery">
+                <h2 class="Subheading">GALLERY</h2>
+                <p>趣味で制作したものです。</p>
+                <p><img src="" alt="MANGAバナー"></p>
+                <p><img src="" alt="ILLUSTRATIONバナー"></p>
+            </section><!-- /top_gallery -->
+        </div><!-- /.wrap_text -->
+    </div><!--  /.inner -->
+</div><!-- /#canvas-container -->
+</main>
+
+<div id="canvas-container">
+    <div class="inner">
+        <aside>
+            <div class="wrap_text">
+                <div class="arrow_line">[疑似要素]矢印</div>
+            </div><!-- /.wrap_text -->
+            <article id="top_contact" class="bg90">
+                <h2 class="Subheading">CONTACT</h2>
+            </article>
+            <canvas id="sineCanvas2" width="800" height="300"></canvas>
+        </aside>
+    </div><!-- /.inner -->
+
+    <div class="under_img">
+        <h3 class=" bubble_title">HIRUNE.LOG</h3>
+    </div>
+
+<footer id="top_footer">
+    <p>Thank you for visiting my website!</p>
+    <small>@HIRUNE ALL rights reserved.</small>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+var unit = 100,
+    canvasList, // キャンバスの配列
+    info = {}, // 全キャンバス共通の描画情報
+    colorList; // 各キャンバスの色情報
+
+/**
+ * Init function.
+ *
+ * Initialize variables and begin the animation.
+ */
+function init() {
+    info.seconds = 0;
+    info.t = 0;
+        canvasList = [];
+    colorList = [];
+    // canvas1個め
+    canvasList.push(document.getElementById("sineCanvas"));
+    colorList.push(['#10c2cd', '#43c0e4', '#1d82b6']);
+
+    // canvas2個め
+    canvasList.push(document.getElementById("sineCanvas1"));
+    colorList.push(['red', 'green', 'blue']);
+
+    // canvas3個め
+    canvasList.push(document.getElementById("sineCanvas2"));
+    colorList.push(['cyan', 'magenta', 'yellow']);
+
+        // 各キャンバスの初期化
+        for(var canvasIndex in canvasList) {
+        var canvas = canvasList[canvasIndex];
+        canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
+        canvas.height = 150;
+        canvas.contextCache = canvas.getContext("2d");
+    }
+    // 共通の更新処理呼び出し
+        update();
+}
+
+function update() {
+        for(var canvasIndex in canvasList) {
+        var canvas = canvasList[canvasIndex];
+        // 各キャンバスの描画
+        draw(canvas, colorList[canvasIndex]);
+    }
+    // 共通の描画情報の更新
+    info.seconds = info.seconds + .014;
+    info.t = info.seconds*Math.PI;
+    // 自身の再起呼び出し
+    setTimeout(update, 35);
+}
+
+/**
+ * Draw animation function.
+ *
+ * This function draws one frame of the animation, waits 20ms, and then calls
+ * itself again.
+ */
+function draw(canvas, color) {
+        // 対象のcanvasのコンテキストを取得
+    var context = canvas.contextCache;
+    // キャンバスの描画をクリア
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    //波を描画
+    drawWave(canvas, color[0], 0.3, 3, 0);
+    drawWave(canvas, color[1], 0.4, 2, 250);
+    drawWave(canvas, color[2], 0.2, 1.6, 100);
+};
+
+/**
+* 波を描画
+* drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
+*/
+function drawWave(canvas, color, alpha, zoom, delay) {
+        var context = canvas.contextCache;
+    context.fillStyle = color;
+    context.globalAlpha = alpha;
+
+    context.beginPath(); //パスの開始
+    drawSine(canvas, info.t / 0.5, zoom, delay);
+    context.lineTo(canvas.width + 10, canvas.height); //パスをCanvasの右下へ
+    context.lineTo(0, canvas.height); //パスをCanvasの左下へ
+    context.closePath() //パスを閉じる
+    context.fill(); //塗りつぶす
+}
+
+/**
+ * Function to draw sine
+ *
+ * The sine curve is drawn in 10px segments starting at the origin.
+ * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
+ */
+function drawSine(canvas, t, zoom, delay) {
+    var xAxis = Math.floor(canvas.height/2);
+    var yAxis = 0;
+    var context = canvas.contextCache;
+    // Set the initial x and y, starting at 0,0 and translating to the origin on
+    // the canvas.
+    var x = t; //時間を横の位置とする
+    var y = Math.sin(x)/zoom;
+    context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
+
+    // Loop to draw segments (横幅の分、波を描画)
+    for (i = yAxis; i <= canvas.width + 10; i += 10) {
+        x = t+(-yAxis+i)/unit/zoom;
+        y = Math.sin(x - delay)/3;
+        context.lineTo(i, unit*y+xAxis);
+    }
+}
+
+init();
+    });
+    </script>
+</script>
+</body>
+</html>
