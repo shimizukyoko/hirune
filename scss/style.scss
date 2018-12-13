@@ -148,7 +148,6 @@ header {
   }
 }
 
-
 /* ハンバーガーアイコンとドロワーメニュー */
 #nav-drawer {
   position: relative;
@@ -213,6 +212,13 @@ header {
   transition: .3s ease-in-out;/*滑らかに表示*/
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);/*左に隠しておく*/
+}
+.menu_text {
+  text-align: center;
+  font-size: $fontM;
+  font-family: $Gfont;
+  line-height: 3;
+  margin-top: 50px;
 }
 
 /*チェックが入ったらもろもろ表示*/

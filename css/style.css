@@ -213,6 +213,14 @@ header h1 {
   /*左に隠しておく*/
 }
 
+.menu_text {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Eagle Lake", cursive;
+  line-height: 3;
+  margin-top: 50px;
+}
+
 /*チェックが入ったらもろもろ表示*/
 #nav-input:checked ~ #nav-close {
   display: block;
