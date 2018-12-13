@@ -132,6 +132,7 @@ header {
   top: 0;
   left: 0;
   margin: 0;
+  border-bottom: 1px solid $subColor;
   h1 {
     color: $subColor;
     margin: 25px;
@@ -205,7 +206,7 @@ header {
   top: 0;
   left: 0;
   z-index: 9999;/*最前面に*/
-  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  width: 80%;/*右側に隙間を作る（閉じるカバーを表示）*/
   max-width: 500px;/*最大幅（調整してください）*/
   height: 100%;
   background: $mainColor; /*背景色*/
