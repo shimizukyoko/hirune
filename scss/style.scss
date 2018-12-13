@@ -72,7 +72,7 @@ a {
 //HEROイメージ
 #canvas-container-hero {
   max-width: 100vw;
-  height: 80vh;
+  height: 85vh;
   background: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,7 +305,9 @@ input[type="radio"]{
   display:block;
 }
 
-//CONTACT
+/*------------------------------
+CONTACT
+---------------------------------*/
 #top_contact {
   h2 {
     color: $subColor;
