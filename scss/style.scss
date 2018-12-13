@@ -32,7 +32,6 @@ ul {
 a {
     text-decoration: none;
     color: $subColor;
-    display: block;
 }
 
 //テキストの入る幅
@@ -221,6 +220,11 @@ header {
   font-family: $Gfont;
   line-height: 3;
   margin-top: 50px;
+}
+
+.sns img {
+    width: 35px;
+    margin: 10px;
 }
 
 /*チェックが入ったらもろもろ表示*/
