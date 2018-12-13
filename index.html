@@ -200,7 +200,7 @@ function init() {
 
     // canvas3個め
     canvasList.push(document.getElementById("sineCanvas2"));
-    colorList.push(['cyan', 'magenta', '#fff']);
+    colorList.push(['#fff', '#fff', '#fff']);
 
         // 各キャンバスの初期化
         for(var canvasIndex in canvasList) {
@@ -241,7 +241,7 @@ function draw(canvas, color) {
     //波を描画
     drawWave(canvas, color[0], 1, 3, 0);
     drawWave(canvas, color[1], 0.6, 2, 250);
-    drawWave(canvas, color[2], 0.9, 1.6, 100);
+    drawWave(canvas, color[2], 0.7, 1.5, 100);
 };
 
 /**
