@@ -287,6 +287,16 @@ CONTACT
   color: #fff;
   padding: 50px 0; }
 
+#contact h2 {
+  font-family: "Eagle Lake", cursive;
+  margin-top: 30px; }
+#contact p {
+  margin: 30px 0; }
+#contact form p {
+  margin-bottom: 0; }
+  #contact form p:last-child {
+    margin: 10px 0; }
+
 /*-----------------------------------------
 footer
 -----------------------------------------*/
