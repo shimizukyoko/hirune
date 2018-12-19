@@ -10,11 +10,11 @@
     <title>HIRUNE.LOG</title>
 </head>
 
-<body>
+<body id="top">
 <header>
     <div class="container">
         <div class="itemA wrap_text">
-            <h1>HIRUNE.LOG</h1>
+            <h1><a href="index.html">HIRUNE.LOG</a></h1>
         </div>
 
         <div class="itemB">
@@ -68,7 +68,7 @@
 <div id="canvas-container-under">
     <div class="inner">
         <canvas id="sineCanvas2" width="800" height="300"></canvas>
-        <h3 class=" bubble_title">HIRUNE.LOG</h3>
+        <h3 class="particletext bubbles"><a href="#top">HIRUNE.LOG</a></h3>
     </div><!-- /.inner -->
 </div><!-- /#canvas-container-under -->
 
@@ -185,7 +185,35 @@ function drawSine(canvas, t, zoom, delay) {
 
 init();
     });
-    </script>
+</script>
+
+<script>
+//  ↓ここから泡の文字
+    $(document).ready(function(){
+function initparticles() {
+   bubbles();
+}
+
+function bubbles() {
+   $.each($(".particletext.bubbles"), function(){
+      var bubblecount = ($(this).width()/50)*10;
+      for(var i = 0; i <= bubblecount; i++) {
+         var size = ($.rnd(40,80)/10);
+         $(this).append('<span class="particle" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
+      }
+   });
+}
+
+jQuery.rnd = function(m,n) {
+      m = parseInt(m);
+      n = parseInt(n);
+      return Math.floor( Math.random() * (n - m + 1) ) + m;
+}
+
+initparticles();
+});
+//  ↑泡の文字ここまで
+</script>
 </script>
 </body>
 </html>

@@ -372,6 +372,36 @@ CONTACT
   text-align: center;
 }
 
+/*----------------------------------------
+泡の文字
+-----------------------------------------*/
+.particletext {
+  text-align: center;
+  font-size: 48px;
+  position: relative;
+}
+
+.particletext.bubbles > .particle {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: bubbles 3s ease-in infinite;
+  border-radius: 100%;
+}
+
+@keyframes bubbles {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(0, -20%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%);
+  }
+}
 /*-----------------------------------------
 footer
 -----------------------------------------*/
