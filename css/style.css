@@ -330,8 +330,8 @@ input[type="radio"] {
 CONTACT
 ---------------------------------*/
 #top_contact h2 {
-  font-family: "Eagle Lake", cursive;
-  margin-top: 30px;
+  color: #fff;
+  padding: 50px 0;
 }
 
 #contact h2 {
@@ -417,6 +417,14 @@ footer
 }
 #top_footer small {
   color: #fff;
+}
+
+/*------------------------------------
+↓ blog.html ブログページの設定 ↓
+-------------------------------------*/
+#blog h2 {
+  font-family: "Eagle Lake", cursive;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

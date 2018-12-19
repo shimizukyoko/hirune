@@ -328,14 +328,15 @@ CONTACT
 //HOMEページのコンタクト
 #top_contact {
   h2 {
-    @include h2font;
+    color: #fff;
+    padding: 50px 0;
   }
 }
-//contact.html
+
+//contact.html コンタクトページ
 #contact {
   h2 {
-    font-family: $Gfont;
-    margin-top: 30px;
+    @include h2font;
   }
   p {
     margin: 30px 0;
@@ -419,5 +420,14 @@ footer
   }
   small {
     color:$subColor;
+  }
+}
+
+/*------------------------------------
+↓ blog.html ブログページの設定 ↓
+-------------------------------------*/
+#blog{
+  h2 {
+    @include h2font;
   }
 }
