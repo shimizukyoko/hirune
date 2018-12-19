@@ -426,5 +426,8 @@ footer
   font-family: "Eagle Lake", cursive;
   margin-top: 30px;
 }
+#blog section p:nth-child(4) {
+  margin-bottom: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

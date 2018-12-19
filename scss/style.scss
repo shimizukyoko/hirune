@@ -430,4 +430,7 @@ footer
   h2 {
     @include h2font;
   }
-}
+  section p:nth-child(4) {
+    margin-bottom: 50px;
+  }
+  }
