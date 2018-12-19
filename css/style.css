@@ -95,10 +95,9 @@ a {
 }
 #canvas-container-under h3 {
   text-align: center;
-  font-family: "Eagle Lake", cursive;
-  font-size: 24px;
+  font-size: 30px;
   position: absolute;
-  bottom: 0%;
+  bottom: -26%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -408,11 +407,13 @@ footer
 #top_footer {
   text-align: center;
   background-color: #0d0015;
-  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 #top_footer p {
   font-family: "Eagle Lake", cursive;
   color: #fff;
+  margin-bottom: 0;
 }
 #top_footer small {
   color: #fff;

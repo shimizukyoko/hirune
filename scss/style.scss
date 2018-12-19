@@ -108,10 +108,9 @@ a {
     }
     h3 {
       text-align: center;
-      font-family: $Gfont;
-      font-size: $fontL;
+      font-size: 30px;
       position: absolute;
-      bottom: 0%;
+      bottom: -26%;
       left: 50%;
       -ms-transform: translate(-50%,-50%);
       -webkit-transform: translate(-50%,-50%);
@@ -406,10 +405,12 @@ footer
 #top_footer {
   text-align: center;
   background-color: $mainColor;
-  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 15px;
   p {
     font-family: $Gfont;
     color: $subColor;
+    margin-bottom: 0;
   }
   small {
     color:$subColor;
