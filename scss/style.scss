@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 //色の設定
 $mainColor: #0d0015; //漆黒
 $subColor: #fff; //白
@@ -11,7 +11,7 @@ $widthS: 70%;
 $fontL: 24px;
 $fontM: 18px;
 $fontS: 15px;
-$Gfont: 'Eagle Lake', cursive;
+$Gfont: 'Merriweather', serif;
 
 //ミックスイン
 @mixin h2font {
@@ -113,8 +113,9 @@ a {
       left: 0;
     }
     h3 {
+      font-family: $Gfont;
       text-align: center;
-      font-size: 30px;
+      font-size: 29px;
       position: absolute;
       bottom: -26%;
       left: 50%;
