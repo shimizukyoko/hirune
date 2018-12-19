@@ -12,6 +12,12 @@ $fontL: 24px;
 $fontM: 18px;
 $fontS: 15px;
 $Gfont: 'Eagle Lake', cursive;
+
+//ミックスイン
+@mixin h2font {
+  font-family: $Gfont;
+  margin-top: 30px;
+}
 /*-----------------------------------------*/
 /*サイト全体の設定 */
 /*-----------------------------------------*/
@@ -322,13 +328,12 @@ CONTACT
 //HOMEページのコンタクト
 #top_contact {
   h2 {
-    color: $subColor;
-    padding: 50px 0;
+    @include h2font;
   }
 }
 //contact.html
 #contact {
-  h2{
+  h2 {
     font-family: $Gfont;
     margin-top: 30px;
   }
