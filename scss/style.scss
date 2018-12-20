@@ -155,6 +155,18 @@ header {
   }
 }
 
+//SNSの設定
+.sns {
+  .fa-twitter-square {
+    color: #55acee;
+    margin: 5px;
+  }
+  .fa-instagram {
+    color: #D93177;
+    margin: 5px;
+  }
+}
+
 /* ハンバーガーアイコンとドロワーメニュー */
 #nav-drawer {
   position: relative;
