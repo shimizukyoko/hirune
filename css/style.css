@@ -10,6 +10,14 @@ body {
   letter-spacing: 0.1em;
 }
 
+h1, h2, h3, h4 {
+  color: #111;
+}
+
+p {
+  color: #333;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -119,6 +127,7 @@ header {
   top: 0;
   left: 0;
   margin: 0;
+  z-index: 999;
   border-bottom: 1px solid #fff;
 }
 header h1 {
@@ -263,7 +272,7 @@ main
   font-size: 12px;
 }
 .infoBG .fa-bell {
-  color: red;
+  color: #e2041b;
   font-weight: bold;
   font-size: 14px;
   margin-right: 3px;
@@ -365,7 +374,7 @@ CONTACT
   color: #a9a9a9;
 }
 #contact form p .red {
-  color: red;
+  color: #e2041b;
   font-weight: bold;
 }
 
@@ -444,6 +453,47 @@ footer
 }
 #blog section p:nth-child(4) {
   margin-bottom: 50px;
+}
+
+/*---------------------------------------
+↓ works.html ワークスの設定
+-----------------------------------------*/
+.infoBG {
+  position: relative;
+  z-index: 100;
+}
+
+#works a {
+  color: #111;
+}
+
+#works {
+  position: relative;
+  z-index: 50;
+  padding-bottom: 100px;
+}
+#works:after {
+  content: "";
+  width: 70%;
+  height: 100%;
+  margin-left: -35%;
+  background: url(../images/Stripe-bg.png) repeat;
+  background-size: 6px 6px;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+}
+#works .wrap_text {
+  position: relative;
+  z-index: 100;
+}
+#works article {
+  margin-top: 50px;
+}
+#works article img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
