@@ -379,9 +379,12 @@ CONTACT
   background-color: #0d0015;
   color: #fff;
   border-style: none;
+  margin-top: 10px;
 }
-#contact form p:last-child {
-  text-align: center;
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+  width: 100%;
+  max-width: 500px;
 }
 
 /*----------------------------------------

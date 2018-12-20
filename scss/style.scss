@@ -372,6 +372,7 @@ CONTACT
       }
    }
 }
+
 //formの見た目
 #contact {
     input[type="text"], input[type="email"], textarea {
@@ -387,10 +388,16 @@ CONTACT
     color: #fff;
     // submitボタンのを枠を非表示にする
     border-style: none;
+    margin-top: 10px;
     }
-    form p:last-child {
-      text-align: center;
-    }
+}
+
+//inputの横幅の指定
+#contact {
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 /*----------------------------------------
 泡の文字
