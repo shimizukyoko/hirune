@@ -262,8 +262,11 @@ main
   text-align: center;
   font-size: 12px;
 }
-.infoBG span {
+.infoBG .fa-bell {
+  color: red;
   font-weight: bold;
+  font-size: 14px;
+  margin-right: 3px;
 }
 
 /* タブの設定 */

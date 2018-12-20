@@ -268,9 +268,12 @@ main
       text-align: center;
       font-size: 12px;
   }
-  span {
-    font-weight: bold;
-  }
+    .fa-bell {
+      color: red;
+      font-weight: bold;
+      font-size: 14px;
+      margin-right: 3px;
+    }
 }
 
 /* タブの設定 */
