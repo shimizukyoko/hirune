@@ -470,7 +470,7 @@ footer
 #works {
   position: relative;
   z-index: 50;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 #works:after {
   content: "";
@@ -483,7 +483,11 @@ footer
   top: -80px;
   left: 50%;
 }
-#works .wrap_text {
+#works h2 {
+  position: relative;
+  z-index: 100;
+}
+#works .works_container {
   position: relative;
   z-index: 100;
 }
@@ -491,9 +495,13 @@ footer
   margin-top: 50px;
 }
 #works article img {
-  width: 100%;
-  max-width: 500px;
+  width: 95%;
+  max-width: 800px;
   height: auto;
+  margin-left: 10px;
+}
+#works article:last-child {
+  margin-top: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

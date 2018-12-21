@@ -488,7 +488,7 @@ footer
 #works {
   position: relative;
   z-index: 50;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   &:after {
   content: "";
     width: 70%;
@@ -500,16 +500,25 @@ footer
     top: -80px;
     left: 50%;
   }
-   .wrap_text, {
+  h2 {
+    position: relative;
+    z-index: 100;
+  }
+   .works_container {
     position: relative;
     z-index: 100;
     }
     article {
       margin-top: 50px;
       img {
-        width:100%;
-        max-width: 500px;
+        width:95%;
+        max-width: 800px;
         height: auto;
+        margin-left: 10px;
+        }
       }
-    }
+      article:last-child {
+        margin-top: 200px;
+      }
   }
+
