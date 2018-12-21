@@ -282,7 +282,7 @@ main
 /* タブの設定 */
 .tab_wrap {
   width: 100%;
-  margin: 80px auto;
+  margin: 50px auto;
 }
 
 input[type="radio"] {
@@ -323,21 +323,21 @@ input[type="radio"] {
 .tab_panel p {
   text-align: center;
   padding: 20px;
-}
-.tab_panel p.phot {
-  padding-bottom: 0;
-}
-
-.website_thumbnail p, .grap_thumbnail p {
   font-size: 18px;
   font-family: "Merriweather", serif;
-  color: #fff;
   margin: 0;
 }
+.tab_panel p.phot {
+  padding: 50px  0 5px 0;
+}
+
 .website_thumbnail img, .grap_thumbnail img {
   border: 1px solid #111;
   width: 89%;
   padding: 0;
+}
+.website_thumbnail p, .grap_thumbnail p {
+  color: #fff;
 }
 
 #tab1:checked ~ .tab_area .tab1_label {

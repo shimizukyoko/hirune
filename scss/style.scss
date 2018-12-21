@@ -292,7 +292,8 @@ main
 
 /* タブの設定 */
 .tab_wrap{
-  width:100%; margin:80px auto;
+  width:100%;
+  margin:50px auto;
 }
 input[type="radio"]{
   display:none;
@@ -328,23 +329,24 @@ input[type="radio"]{
     p {
       text-align:center;
       padding:20px ;
+      font-size: $fontM;
+      font-family: $Gfont;
+      margin: 0;
+
         &.phot {
-          padding-bottom: 0;
+          padding: 50px  0 5px 0;
         }
-       }
+      }
 }
 
 .website_thumbnail, .grap_thumbnail {
-  p {
-    font-size: $fontM;
-    font-family: $Gfont;
-    color: $subColor;
-    margin: 0;
-  }
   img {
     border: 1px solid #111;
     width: 89%;
     padding: 0;
+  }
+  p {
+    color: $subColor;
   }
 }
 
