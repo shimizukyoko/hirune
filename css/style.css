@@ -271,11 +271,12 @@ main
   text-align: center;
   font-size: 12px;
 }
-.infoBG .fa-bell {
-  color: #e2041b;
+.infoBG p:before {
+  font-family: FontAwesome;
+  content: "\f0f3";
   font-weight: bold;
   font-size: 14px;
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 /* タブの設定 */

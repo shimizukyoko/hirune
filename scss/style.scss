@@ -280,11 +280,12 @@ main
       text-align: center;
       font-size: 12px;
   }
-    .fa-bell {
-      color: $accentColor;
-      font-weight: bold;
-      font-size: 14px;
-      margin-right: 3px;
+    p:before {
+    font-family: FontAwesome;
+    content: "\f0f3";
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
     }
 }
 
