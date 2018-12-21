@@ -296,7 +296,7 @@ input[type="radio"] {
 
 .tab_area label {
   width: 45%;
-  margin: 0 5px;
+  margin: 0 9px;
   display: inline-block;
   padding: 16px 0;
   color: #999;
@@ -317,18 +317,27 @@ input[type="radio"] {
 
 .tab_panel {
   width: 100%;
-  padding: 80px 0;
+  padding: 20px 0;
   display: none;
 }
 .tab_panel p {
-  letter-spacing: 1px;
   text-align: center;
   padding: 20px;
+}
+.tab_panel p.phot {
+  padding-bottom: 0;
 }
 
 .website_thumbnail p, .grap_thumbnail p {
   font-size: 18px;
   font-family: "Merriweather", serif;
+  color: #fff;
+  margin: 0;
+}
+.website_thumbnail img, .grap_thumbnail img {
+  border: 1px solid #111;
+  width: 89%;
+  padding: 0;
 }
 
 #tab1:checked ~ .tab_area .tab1_label {
@@ -352,6 +361,25 @@ input[type="radio"] {
 /*------------------------------
 CONTACT
 ---------------------------------*/
+.arrow_line {
+  margin-top: 100px;
+}
+.arrow_line ul {
+  text-align: center;
+}
+.arrow_line li:not(:last-child):after {
+  font-family: FontAwesome;
+  content: "\f103";
+  display: block;
+  /* 前後に改行*/
+  font-size: 18px;
+  /*アイコンサイズ*/
+  color: #0d0015;
+  /*色*/
+  padding: 0;
+  /*余白*/
+}
+
 #top_contact h2 {
   color: #fff;
   padding: 50px 0;

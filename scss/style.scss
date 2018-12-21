@@ -289,6 +289,7 @@ main
     }
 }
 
+
 /* タブの設定 */
 .tab_wrap{
   width:100%; margin:80px auto;
@@ -302,7 +303,7 @@ input[type="radio"]{
 }
 .tab_area label{
   width:45%;
-  margin:0 5px;
+  margin:0 9px;
   display:inline-block;
   padding:16px 0;
   color:#999;
@@ -317,17 +318,19 @@ input[type="radio"]{
   }
 }
 
-.panel_area{
+.panel_area {
   background:#fff;
 }
-.tab_panel{
+.tab_panel {
   width:100%;
-  padding:80px 0;
+  padding:20px 0;
   display:none;
     p {
-      letter-spacing:1px;
       text-align:center;
-      padding: 20px;
+      padding:20px ;
+        &.phot {
+          padding-bottom: 0;
+        }
        }
 }
 
@@ -335,6 +338,13 @@ input[type="radio"]{
   p {
     font-size: $fontM;
     font-family: $Gfont;
+    color: $subColor;
+    margin: 0;
+  }
+  img {
+    border: 1px solid #111;
+    width: 89%;
+    padding: 0;
   }
 }
 
@@ -354,6 +364,22 @@ input[type="radio"]{
 /*------------------------------
 CONTACT
 ---------------------------------*/
+//矢印マーク
+.arrow_line {
+  margin-top: 100px;
+  ul {
+    text-align: center;
+  }
+  li:not(:last-child):after {
+    font-family: FontAwesome;
+    content: "\f103";
+    display: block; /* 前後に改行*/
+    font-size: 18px;/*アイコンサイズ*/
+    color: $mainColor;/*色*/
+     padding: 0;/*余白*/
+}
+}
+
 //HOMEページのコンタクト
 #top_contact {
   h2 {
