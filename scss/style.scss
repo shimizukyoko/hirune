@@ -329,10 +329,7 @@ input[type="radio"]{
     p {
       text-align:center;
       padding:20px ;
-      font-size: $fontM;
-      font-family: $Gfont;
       margin: 0;
-
         &.phot {
           padding: 50px  0 5px 0;
         }
@@ -347,6 +344,8 @@ input[type="radio"]{
   }
   p {
     color: $subColor;
+    font-family: $Gfont;
+    font-size: $fontM;
   }
 }
 

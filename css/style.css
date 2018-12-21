@@ -323,8 +323,6 @@ input[type="radio"] {
 .tab_panel p {
   text-align: center;
   padding: 20px;
-  font-size: 18px;
-  font-family: "Merriweather", serif;
   margin: 0;
 }
 .tab_panel p.phot {
@@ -338,6 +336,8 @@ input[type="radio"] {
 }
 .website_thumbnail p, .grap_thumbnail p {
   color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
 }
 
 #tab1:checked ~ .tab_area .tab1_label {
