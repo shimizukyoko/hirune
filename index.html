@@ -65,14 +65,10 @@
             </div><!-- /.wrap_text -->
         </div>
 
-    <div class="middle_img">
-        <video controls autoplay loop>
-            <source src="images/15028211_203419683399875_6284215342268940288_n.mp4">
-        </video>
-    </div><!-- /.middle_img-->
-
-<div id="canvas-container">
+<div id="canvas-container-middle">
     <canvas id="sineCanvas1" width="800" height="300"></canvas>
+</div>
+
     <div class="inner">
         <section id="top_works">
         <h2 class="Subheading">WORKS</h2>
@@ -215,7 +211,7 @@ function init() {
 
     // canvas2個め
     canvasList.push(document.getElementById("sineCanvas1"));
-    colorList.push(['orange', 'yellow', '#fff']);
+    colorList.push(['#fff', '#fff', '#fff']);
 
     // canvas3個め
     canvasList.push(document.getElementById("sineCanvas2"));
