@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discription" content="Webクリエイター、イラストレーター、漫画家であるHERUNEのポートフォリオサイトです。">
+    <meta name="keywordws" content="web,webクリエーター,イラストレーター,漫画家,漫画,マンガ家,マンガ,ポートフォリオ">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>GALLERY | HIRUNE.LOG</title>
+</head>
+
+<body id="top">
+<header>
+    <div class="container">
+        <div class="itemA wrap_text">
+            <h1><a href="index.html">HIRUNE.LOG</a></h1>
+        </div>
+
+        <div class="itemB">
+            <div id="nav-drawer">
+                <!-- ハンバーガーアイコン -->
+                <input id="nav-input" type="checkbox" class="nav-unshown" >
+                <label id="nav-open"  for="nav-input"><span></span></label>
+                <label id="nav-close" class="nav-unshown" for="nav-input"></label>
+
+                <!-- バーガーアイコンの中身 -->
+                <div id="nav-content">
+                    <div class="menu_text">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="works.html">WORKS</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li class="sns">
+                                <a href="https://twitter.com/hirunebububu" target="_blank"><i class="fab fa-2x fa-twitter-square"></i></a>
+                                <a href="https://www.instagram.com/hirune.zzz" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div><!--/.menu_text-->
+                </div><!-- /nav-content 中身ここまで-->
+            </div><!-- /nav-drawer -->
+        </div><!-- /.itemB -->
+    </div><!-- /.container -->
+</header>
+
+<div class="infoBG">
+    <p>2019.01.20 関西コミティア54に出展します！</p>
+</div><!-- /.infoBG -->
+
+<main id="gallery">
+    <div class="wrap_text">
+        <h2>GALLERY</h2>
+    </div>
+    <article class="gallery_container">
+        <a href="comic-viewer-master/sample/index2.html"><img src="images/works-web02.jpg" alt="もじかえるのサムネイル画像"></a>
+    <div class="wrap_text">
+        <a href=""><h3>もじかえる <i class="fas fa-external-link-alt"></i></h3></a>
+        <p>制作時間など</p>
+        <p>詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明</p>
+    </div>
+    </article >
+    <article class="gallery_container">
+        <a href=""><img src="images/works-web01.jpg" alt="もじかえるのサムネイル画像"></a>
+        <div class="wrap_text">
+            <a href=""><h3>クラウンベーカリー <i class="fas fa-external-link-alt"></i></h3></a>
+            <p>制作時間など</p>
+            <p>詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明詳しい説明</p>
+        </div>
+    </article>
+
+    <article id="top_contact" class="bg90 works_container">
+        <h2 class="Subheading">CONTACT</h2>
+    </article>
+</main>
+
+<div id="canvas-container-under">
+    <div class="inner">
+        <canvas id="sineCanvas2" width="800" height="300"></canvas>
+        <h3 class="particletext bubbles"><a href="#top">HIRUNE.LOG</a></h3>
+    </div><!-- /.inner -->
+</div><!-- /#canvas-container-under -->
+
+<footer id="top_footer">
+    <p>Thank you for visiting my website!</p>
+    <small>@HIRUNE ALL rights reserved.</small>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+var unit = 100,
+    canvasList, // キャンバスの配列
+    info = {}, // 全キャンバス共通の描画情報
+    colorList; // 各キャンバスの色情報
+
+/**
+ * Init function.
+ *
+ * Initialize variables and begin the animation.
+ */
+function init() {
+    info.seconds = 0;
+    info.t = 0;
+        canvasList = [];
+    colorList = [];
+
+    // canvas3個め
+    canvasList.push(document.getElementById("sineCanvas2"));
+    colorList.push(['#fff', '#fff', '#fff']);
+
+        // 各キャンバスの初期化
+        for(var canvasIndex in canvasList) {
+        var canvas = canvasList[canvasIndex];
+        canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
+        canvas.height = 150;
+        canvas.contextCache = canvas.getContext("2d");
+    }
+    // 共通の更新処理呼び出し
+        update();
+}
+
+function update() {
+        for(var canvasIndex in canvasList) {
+        var canvas = canvasList[canvasIndex];
+        // 各キャンバスの描画
+        draw(canvas, colorList[canvasIndex]);
+    }
+    // 共通の描画情報の更新
+    info.seconds = info.seconds + .014;
+    info.t = info.seconds*Math.PI;
+    // 自身の再起呼び出し
+    setTimeout(update, 35);
+}
+
+/**
+ * Draw animation function.
+ *
+ * This function draws one frame of the animation, waits 20ms, and then calls
+ * itself again.
+ */
+function draw(canvas, color) {
+        // 対象のcanvasのコンテキストを取得
+    var context = canvas.contextCache;
+    // キャンバスの描画をクリア
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    //波を描画
+    drawWave(canvas, color[0], 1, 3, 0);
+    drawWave(canvas, color[1], 0.6, 2, 250);
+    drawWave(canvas, color[2], 0.7, 1.5, 100);
+};
+
+/**
+* 波を描画
+* drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
+*/
+function drawWave(canvas, color, alpha, zoom, delay) {
+        var context = canvas.contextCache;
+    context.fillStyle = color;
+    context.globalAlpha = alpha;
+
+    context.beginPath(); //パスの開始
+    drawSine(canvas, info.t / 0.5, zoom, delay);
+    context.lineTo(canvas.width + 10, canvas.height); //パスをCanvasの右下へ
+    context.lineTo(0, canvas.height); //パスをCanvasの左下へ
+    context.closePath() //パスを閉じる
+    context.fill(); //塗りつぶす
+}
+
+/**
+ * Function to draw sine
+ *
+ * The sine curve is drawn in 10px segments starting at the origin.
+ * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
+ */
+function drawSine(canvas, t, zoom, delay) {
+    var xAxis = Math.floor(canvas.height/2);
+    var yAxis = 0;
+    var context = canvas.contextCache;
+    // Set the initial x and y, starting at 0,0 and translating to the origin on
+    // the canvas.
+    var x = t; //時間を横の位置とする
+    var y = Math.sin(x)/zoom;
+    context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
+
+    // Loop to draw segments (横幅の分、波を描画)
+    for (i = yAxis; i <= canvas.width + 10; i += 10) {
+        x = t+(-yAxis+i)/unit/zoom;
+        y = Math.sin(x - delay)/3;
+        context.lineTo(i, unit*y+xAxis);
+    }
+}
+
+init();
+    });
+</script>
+
+<script>
+//  ↓ここから泡の文字
+    $(document).ready(function(){
+function initparticles() {
+   bubbles();
+}
+
+function bubbles() {
+   $.each($(".particletext.bubbles"), function(){
+      var bubblecount = ($(this).width()/50)*10;
+      for(var i = 0; i <= bubblecount; i++) {
+         var size = ($.rnd(40,80)/10);
+         $(this).append('<span class="particle" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0,30)/10) + 's;"></span>');
+      }
+   });
+}
+
+jQuery.rnd = function(m,n) {
+      m = parseInt(m);
+      n = parseInt(n);
+      return Math.floor( Math.random() * (n - m + 1) ) + m;
+}
+
+initparticles();
+});
+//  ↑泡の文字ここまで
+</script>
+</script>
+</body>
+</html>
