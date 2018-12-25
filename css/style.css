@@ -540,4 +540,41 @@ footer
   margin-top: 200px;
 }
 
+/*----------------------------------
+gallery.html ギャラリーの設定
+----------------------------------*/
+#gallery {
+  position: relative;
+  z-index: 50;
+  padding-bottom: 40px;
+}
+#gallery:after {
+  content: "";
+  width: 35%;
+  height: 100%;
+  background: url(../images/Stripe-bg.png) repeat;
+  background-size: 6px 6px;
+  position: absolute;
+  top: -80px;
+  left: 30px;
+}
+#gallery h2 {
+  position: relative;
+  z-index: 100;
+}
+#gallery .gallery_container {
+  position: relative;
+  z-index: 100;
+}
+#gallery article {
+  margin-top: 50px;
+}
+#gallery article img {
+  width: 80%;
+  margin-left: 10%;
+}
+#gallery article:last-child {
+  margin-top: 200px;
+}
+
 /*# sourceMappingURL=style.css.map */
