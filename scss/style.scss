@@ -101,12 +101,19 @@ a {
       right: 0;
     }
 }
-.middle_img {
-  text-align: center;
-    video {
-      max-width: 100vw;
-      height: 40vh;
-  }
+#canvas-container-middle {
+  width: 100%;
+  height: 414px;
+  background-image: url(../images/sakana.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+    #sineCanvas1 {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+    }
 }
 
 #canvas-container-under {
@@ -331,7 +338,7 @@ input[type="radio"]{
       padding:20px ;
       margin: 0;
         &.phot {
-          padding: 50px  0 5px 0;
+          padding: 50px  0 10px 0;
         }
       }
 }
