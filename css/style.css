@@ -394,7 +394,7 @@ CONTACT
 
 #contact h2 {
   font-family: "Merriweather", serif;
-  margin-top: 30px;
+  margin: 30px 0 40px 0;
 }
 #contact p {
   margin: 30px 0;
@@ -485,9 +485,13 @@ footer
 -------------------------------------*/
 #blog h2 {
   font-family: "Merriweather", serif;
-  margin-top: 30px;
+  margin: 30px 0 40px 0;
 }
-#blog section p:nth-child(4) {
+#blog h3, #blog .date {
+  margin: 5px 0;
+  text-align: center;
+}
+#blog section {
   margin-bottom: 50px;
 }
 

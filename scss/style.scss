@@ -17,7 +17,7 @@ $Gfont: 'Merriweather', serif;
 //ミックスイン
 @mixin h2font {
   font-family: $Gfont;
-  margin-top: 30px;
+  margin: 30px 0 40px 0;
 }
 /*-----------------------------------------*/
 /*サイト全体の設定 */
@@ -500,7 +500,11 @@ footer
   h2 {
     @include h2font;
   }
-  section p:nth-child(4) {
+  h3, .date {
+    margin: 5px 0;
+    text-align: center;
+  }
+  section  {
     margin-bottom: 50px;
   }
   }
