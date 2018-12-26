@@ -109,7 +109,7 @@ a {
 }
 #canvas-container-middle {
   width: 100%;
-  height: 414px;
+  height: 418px;
   background-image: url(../images/sakana.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -653,7 +653,7 @@ gallery.html ギャラリーの設定
         width: 80%;
         max-width: 500px;
         margin-left: 10%;
-    @include thumbnail;
+        @include thumbnail;
       }
   }
   article:last-child {
