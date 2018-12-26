@@ -286,6 +286,22 @@ main
   margin-right: 5px;
 }
 
+#top_about span {
+  font-size: 18px;
+}
+#top_about .bg50 {
+  width: 50%;
+  max-width: 300px;
+  background-color: #0d0015;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+#top_about .bg50 p {
+  margin: 0;
+  color: #fff;
+}
+
 /* タブの設定 */
 .tab_wrap {
   width: 100%;
@@ -368,6 +384,38 @@ input[type="radio"] {
 
 #tab2:checked ~ .panel_area #panel2 {
   display: block;
+}
+
+#top_gallery {
+  border-top: 1px dotted #0d0015;
+  text-align: center;
+}
+#top_gallery h2 {
+  margin-top: 60px;
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 3px;
+  margin-top: 30px;
+}
+.banner p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }
 
 /*------------------------------
@@ -522,7 +570,7 @@ footer
   width: 70%;
   height: 100%;
   margin-left: -35%;
-  background: url(../images/Stripe-bg.png) repeat;
+  background: url(../images/stripe-bg.png) repeat;
   background-size: 6px 6px;
   position: absolute;
   top: -80px;
@@ -564,7 +612,7 @@ gallery.html ギャラリーの設定
   content: "";
   width: 35%;
   height: 100%;
-  background: url(../images/Stripe-bg.png) repeat;
+  background: url(../images/stripe-bg.png) repeat;
   background-size: 6px 6px;
   position: absolute;
   top: -80px;
@@ -583,6 +631,7 @@ gallery.html ギャラリーの設定
 }
 #gallery article img {
   width: 80%;
+  max-width: 500px;
   margin-left: 10%;
   border: 1px solid #ddd;
   background-color: #fff;
@@ -597,6 +646,19 @@ span {
 }
 span.red {
   color: #e2041b;
+  font-size: 12px;
+}
+
+/*--------------------------
+about.html アバウトページ
+----------------------------*/
+#about img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+#about figcaption {
   font-size: 12px;
 }
 

@@ -302,6 +302,24 @@ main
     }
 }
 
+//ABOUT(トップのアバウトエリア)
+#top_about {
+  span {
+    font-size: 18px;
+  }
+  .bg50 {
+    width: 50%;
+    max-width: 300px;
+    background-color: $mainColor;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    p {
+      margin: 0;
+      color: $subColor;
+  }
+  }
+}
 
 /* タブの設定 */
 .tab_wrap{
@@ -377,6 +395,39 @@ input[type="radio"]{
 #tab2:checked ~ .panel_area #panel2{
   display:block;
 }
+
+//GALLERY トップページのギャラリーエリア
+#top_gallery {
+  border-top: 1px dotted $mainColor;
+  text-align: center;
+  h2 {
+  margin-top: 60px;
+}
+}
+
+.banner {
+  position:relative;
+    img {
+    width: 100%;
+    max-width: 500px;
+    @include thumbnail;
+    margin-top: 30px;
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-family: $Gfont;
+    font-size: 24px;
+    font-weight: bold;
+    color: $subColor;
+
+  }
+}
+
 
 /*------------------------------
 CONTACT
@@ -542,7 +593,7 @@ footer
     width: 70%;
     height: 100%;
     margin-left: -35%;
-    background: url(../images/Stripe-bg.png) repeat;
+    background: url(../images/stripe-bg.png) repeat;
     background-size: 6px 6px;
     position: absolute;
     top: -80px;
@@ -582,7 +633,7 @@ gallery.html ギャラリーの設定
   content: "";
     width: 35%;
     height: 100%;
-    background: url(../images/Stripe-bg.png) repeat;
+    background: url(../images/stripe-bg.png) repeat;
     background-size: 6px 6px;
     position: absolute;
     top: -80px;
@@ -600,6 +651,7 @@ gallery.html ギャラリーの設定
       margin-top: 50px;
       img {
         width: 80%;
+        max-width: 500px;
         margin-left: 10%;
     @include thumbnail;
       }
@@ -614,4 +666,19 @@ span {
       color: $accentColor;
       font-size: 12px;
     }
+}
+
+/*--------------------------
+about.html アバウトページ
+----------------------------*/
+#about {
+  img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+  margin-top: 20px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
 }
