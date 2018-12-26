@@ -337,9 +337,14 @@ input[type="radio"] {
 }
 
 .website_thumbnail img, .grap_thumbnail img {
-  border: 1px solid #111;
   width: 89%;
-  padding: 0;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 3px;
+}
+.website_thumbnail .bg70, .grap_thumbnail .bg70 {
+  max-width: 800px;
 }
 .website_thumbnail p, .grap_thumbnail p {
   color: #fff;
@@ -539,6 +544,9 @@ footer
   max-width: 800px;
   height: auto;
   margin-left: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 3px;
 }
 #works article:last-child {
   margin-top: 200px;
@@ -576,9 +584,20 @@ gallery.html ギャラリーの設定
 #gallery article img {
   width: 80%;
   margin-left: 10%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 3px;
 }
 #gallery article:last-child {
   margin-top: 200px;
+}
+
+span {
+  font-weight: bold;
+}
+span.red {
+  color: #e2041b;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

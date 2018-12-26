@@ -19,6 +19,12 @@ $Gfont: 'Merriweather', serif;
   font-family: $Gfont;
   margin: 30px 0 40px 0;
 }
+
+@mixin thumbnail {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 3px;
+}
 /*-----------------------------------------*/
 /*サイト全体の設定 */
 /*-----------------------------------------*/
@@ -345,9 +351,12 @@ input[type="radio"]{
 
 .website_thumbnail, .grap_thumbnail {
   img {
-    border: 1px solid #111;
     width: 89%;
-    padding: 0;
+    max-width: 800px;
+    @include thumbnail;
+  }
+  .bg70 {
+    max-width: 800px;
   }
   p {
     color: $subColor;
@@ -554,6 +563,7 @@ footer
         max-width: 800px;
         height: auto;
         margin-left: 10px;
+        @include thumbnail;
         }
       }
       article:last-child {
@@ -591,9 +601,17 @@ gallery.html ギャラリーの設定
       img {
         width: 80%;
         margin-left: 10%;
+    @include thumbnail;
       }
   }
   article:last-child {
         margin-top: 200px;
   }
+}
+span {
+  font-weight: bold;
+    &.red {
+      color: $accentColor;
+      font-size: 12px;
+    }
 }
