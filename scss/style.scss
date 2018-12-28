@@ -441,6 +441,7 @@ CONTACT
   li:not(:last-child):after {
     font-family: FontAwesome;
     content: "\f103";
+    font-weight: 900;/*FontAwesome5からはこの記述が必要、ないと表示されない*/
     display: block; /* 前後に改行*/
     font-size: 18px;/*アイコンサイズ*/
     color: $mainColor;/*色*/
