@@ -260,6 +260,9 @@ main
     font-family: "Merriweather", serif;
     font-size: 14px; }
 
+#top_works .wrap_text {
+  text-align: center; }
+
 /* タブの設定 */
 .tab_wrap {
   width: 100%;
