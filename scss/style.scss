@@ -147,6 +147,18 @@ a {
       padding:0;
   }
 }
+// 768px以上の場合適応される（タブレット）
+@media screen and (min-width:768px){
+  #canvas-container-under h3 {
+  bottom: -19%;
+  }
+}
+// 1024px以上の場合適応される（pc）
+@media screen and (min-width:1024px) {
+  #canvas-container-under h3 {
+  bottom: -24%;
+ }
+}
 /*------------------------------------------------*/
 /* headerの設定 */
 /*-------------------------------------------------*/
@@ -298,15 +310,17 @@ main
     font-size: 18px;
   }
   .bg50 {
-    width: 50%;
+    width: 55%;
     max-width: 300px;
     background-color: $mainColor;
-    padding: 10px;
+    padding: 15px;
     margin: 20px auto;
     text-align: center;
     p {
       margin: 0;
       color: $subColor;
+      font-family: $Gfont;
+      font-size: 14px;
   }
   }
 }
@@ -352,22 +366,26 @@ input[type="radio"]{
       margin: 0;
       }
 }
+//768px以上の設定
+@media screen and (min-width:768px) {
+  .tab_area label {
+    width: 45%;
+    margin: 0 15px;
+}
+}
 
 .website_thumbnail, .grap_thumbnail {
   figure {
     margin-top: 50px;
     margin-bottom: 10px;
-    &:nth-child {
-      margin-top: 30px;
     }
     figcaption {
     color: #333;
     font-size: 14px;
     text-align: center;
   }
-  }
   img {
-    width: 89%;
+    width: 100%;
     max-width: 600px;
     @include thumbnail;
   }
@@ -438,7 +456,6 @@ CONTACT
     text-align: center;
   }
 }
-
 //HOMEページのコンタクト
 #top_contact {
   h2 {
@@ -556,15 +573,23 @@ footer
     margin: 5px 0;
     text-align: center;
   }
-  section  {
+  section {
     margin-bottom: 50px;
   }
   }
-
+// 768px以上の場合適応される（タブレット&PC）
+@media screen and (min-width:768px){
+  #blog {
+    .pc_img {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
 /*---------------------------------------
 ↓ works.html ワークスの設定
 -----------------------------------------*/
-
 .infoBG {
   position: relative;
   z-index: 100;
@@ -592,6 +617,7 @@ footer
     left: 50%;
   }
   h2 {
+    @include h2font;
     position: relative;
     z-index: 100;
   }
@@ -632,6 +658,7 @@ gallery.html ギャラリーの設定
     left: 30px;
   }
   h2 {
+    @include h2font;
     position: relative;
     z-index: 100;
   }
@@ -664,6 +691,9 @@ span {
 about.html アバウトページ
 ----------------------------*/
 #about {
+  h2 {
+    @include h2font;
+  }
   img {
   width: 100%;
   max-width: 500px;

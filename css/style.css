@@ -102,6 +102,12 @@ a {
     margin: 0;
     padding: 0; }
 
+@media screen and (min-width: 768px) {
+  #canvas-container-under h3 {
+    bottom: -19%; } }
+@media screen and (min-width: 1024px) {
+  #canvas-container-under h3 {
+    bottom: -24%; } }
 /*------------------------------------------------*/
 /* headerの設定 */
 /*-------------------------------------------------*/
@@ -242,15 +248,17 @@ main
 #top_about span {
   font-size: 18px; }
 #top_about .bg50 {
-  width: 50%;
+  width: 55%;
   max-width: 300px;
   background-color: #0d0015;
-  padding: 10px;
+  padding: 15px;
   margin: 20px auto;
   text-align: center; }
   #top_about .bg50 p {
     margin: 0;
-    color: #fff; }
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-size: 14px; }
 
 /* タブの設定 */
 .tab_wrap {
@@ -290,17 +298,19 @@ input[type="radio"] {
     text-align: center;
     margin: 0; }
 
+@media screen and (min-width: 768px) {
+  .tab_area label {
+    width: 45%;
+    margin: 0 15px; } }
 .website_thumbnail figure, .grap_thumbnail figure {
   margin-top: 50px;
   margin-bottom: 10px; }
-  .website_thumbnail figure:nth-child, .grap_thumbnail figure:nth-child {
-    margin-top: 30px; }
-  .website_thumbnail figure figcaption, .grap_thumbnail figure figcaption {
-    color: #333;
-    font-size: 14px;
-    text-align: center; }
+.website_thumbnail figcaption, .grap_thumbnail figcaption {
+  color: #333;
+  font-size: 14px;
+  text-align: center; }
 .website_thumbnail img, .grap_thumbnail img {
-  width: 89%;
+  width: 100%;
   max-width: 600px;
   border: 1px solid #ddd;
   background-color: #fff;
@@ -449,6 +459,11 @@ footer
 #blog section {
   margin-bottom: 50px; }
 
+@media screen and (min-width: 768px) {
+  #blog .pc_img {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; } }
 /*---------------------------------------
 ↓ works.html ワークスの設定
 -----------------------------------------*/
@@ -474,6 +489,8 @@ footer
     top: -80px;
     left: 50%; }
   #works h2 {
+    font-family: "Merriweather", serif;
+    margin: 30px 0 40px 0;
     position: relative;
     z-index: 100; }
   #works .works_container {
@@ -509,6 +526,8 @@ gallery.html ギャラリーの設定
     top: -80px;
     left: 30px; }
   #gallery h2 {
+    font-family: "Merriweather", serif;
+    margin: 30px 0 40px 0;
     position: relative;
     z-index: 100; }
   #gallery .gallery_container {
@@ -535,6 +554,9 @@ span {
 /*--------------------------
 about.html アバウトページ
 ----------------------------*/
+#about h2 {
+  font-family: "Merriweather", serif;
+  margin: 30px 0 40px 0; }
 #about img {
   width: 100%;
   max-width: 500px;
