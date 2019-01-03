@@ -450,14 +450,16 @@ footer
 /*------------------------------------
 ↓ blog.html ブログページの設定 ↓
 -------------------------------------*/
-#blog h2 {
-  font-family: "Merriweather", serif;
-  margin: 30px 0 40px 0; }
-#blog h3, #blog .date {
-  margin: 5px 0;
-  text-align: center; }
-#blog section {
-  margin-bottom: 50px; }
+#blog {
+  margin-top: 100px; }
+  #blog h2 {
+    font-family: "Merriweather", serif;
+    margin: 30px 0 40px 0; }
+  #blog h3, #blog .date {
+    margin: 5px 0;
+    text-align: center; }
+  #blog section {
+    margin-bottom: 80px; }
 
 @media screen and (min-width: 768px) {
   #blog .pc_img {
@@ -563,6 +565,7 @@ about.html アバウトページ
   border-radius: 50%;
   margin-top: 20px; }
 #about figcaption {
-  font-size: 12px; }
+  font-size: 12px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

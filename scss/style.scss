@@ -566,6 +566,7 @@ footer
 ↓ blog.html ブログページの設定 ↓
 -------------------------------------*/
 #blog{
+  margin-top: 100px;
   h2 {
     @include h2font;
   }
@@ -574,7 +575,7 @@ footer
     text-align: center;
   }
   section {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   }
 // 768px以上の場合適応される（タブレット&PC）
@@ -702,5 +703,6 @@ about.html アバウトページ
   }
   figcaption {
     font-size: 12px;
+    text-align: center;
   }
 }
