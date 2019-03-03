@@ -466,9 +466,12 @@ footer
 
 @media screen and (min-width: 768px) {
   #blog .pc_img {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
-    text-align: center; } }
+    text-align: center; }
+  #blog .wrap_text {
+    width: 50%;
+    margin: 0 auto; } }
 /*---------------------------------------
 ↓ works.html ワークスの設定
 -----------------------------------------*/
@@ -562,6 +565,8 @@ about.html アバウトページ
 #about h2 {
   font-family: "Merriweather", serif;
   margin: 30px 0 40px 0; }
+#about figure {
+  text-align: center; }
 #about img {
   width: 100%;
   max-width: 500px;

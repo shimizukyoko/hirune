@@ -588,9 +588,13 @@ footer
 @media screen and (min-width:768px){
   #blog {
     .pc_img {
-      width: 80%;
+      width: 50%;
       margin: 0 auto;
       text-align: center;
+    }
+    .wrap_text {
+      width: 50%;
+      margin: 0 auto;
     }
   }
 }
@@ -700,6 +704,9 @@ about.html アバウトページ
 #about {
   h2 {
     @include h2font;
+  }
+  figure {
+    text-align: center;
   }
   img {
   width: 100%;
